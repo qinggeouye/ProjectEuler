@@ -1,6 +1,6 @@
 def is_prime(n):
     k = 2
-    while k < n // 2:
+    while k <= n // 2:
         if n % k == 0:
             print("no")
             return False
