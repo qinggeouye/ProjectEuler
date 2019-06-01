@@ -4,7 +4,7 @@ def compute(natural):
     :param natural: 50
     :return:
     """
-    return str(sum(NUMBERS))[:10]
+    return str(sum(NUMBERS))[:natural]
 
 
 NUMBERS = [
@@ -112,4 +112,4 @@ NUMBERS = [
 
 
 if __name__ == "__main__":
-    print(compute(50))
+    print(compute(10))
