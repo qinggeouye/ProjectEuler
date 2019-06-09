@@ -6,7 +6,7 @@ def factorial(n):
 
 
 def sum_factorial_of_ten_digits():
-    return sum(factorial(i) for i in range(1, 10))
+    return sum(factorial(9) for i in range(1, 10))
 
 
 def is_equal_factorial_sum(n):
