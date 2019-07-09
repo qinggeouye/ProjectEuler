@@ -3,7 +3,7 @@ import eulerlib
 
 # https://en.wikipedia.org/wiki/Divisibility_rule#Divisibility_by_3_or_9
 # 数字之和能被 3 整除，那么由这些数字组成的数就能被 3 整除，这个数就不是素数。
-# the largest n-digit pandigital prime  srats with 7654321
+# the largest n-digit pandigital prime  starts with 7654321
 
 
 def is_pan_digital(n, s=9):
