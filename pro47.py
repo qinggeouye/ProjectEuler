@@ -10,7 +10,7 @@ def distinct_primes_factors(lim, nf, ns):
     lim += ns
     f = [0] * lim
     c = 0  # counter
-    for n in range(2, lim):
+    for n in range(2, lim):  # n is the number, eg 644
         if f[n] == nf:
             c += 1  # increment a counter by 1
             if c == ns:
@@ -19,6 +19,8 @@ def distinct_primes_factors(lim, nf, ns):
         else:
             c = 0  # reset to zero
             if f[n] == 0:
+                # eg：644 = (2x2) x 7 x 23, distinct prime factors are 2, 7, 23
+                # sieving the number of distinct prime factors
                 f[n::n] = [x + 1 for x in f[n::n]]
     return
 
